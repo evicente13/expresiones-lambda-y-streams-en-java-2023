@@ -2,8 +2,10 @@ package com.debuggeando_ideas.interfaces;
 
 import java.util.List;
 
-public interface DatabaseService {
-    String getById(Long id);
+public interface DatabaseService<T> {
 
-    List<String> getAllRecords();
+
+    T getById(Long id);
+
+    List<T> getAllRecords();
 }
